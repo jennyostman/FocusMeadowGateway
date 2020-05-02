@@ -1,1 +1,20 @@
+server:
+  port: 8000
 
+zuul:
+  prefix: /api
+  routes:
+    users:
+      path: /users/**
+      url: http://localhost:8082/users
+    timers:
+      path: /timers/**
+      url: http://localhost:8080/timers
+
+#endpoints:
+#  trace:
+#    sensitive: false
+
+ribbon:
+  eureka:
+    enabled: false
