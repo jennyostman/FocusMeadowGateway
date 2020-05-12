@@ -9,8 +9,11 @@ zuul:
       serviceId: users
       strip-prefix: false
     timers:
-      #Uppdatera så att de heter antingen timers eller gamelogic?
       path: /timers/**
+      serviceId: gamelogic
+      strip-prefix: false
+    flowers:
+      path: /flowers/**
       serviceId: gamelogic
       strip-prefix: false
   ignored-services: '*'
