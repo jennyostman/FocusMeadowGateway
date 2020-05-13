@@ -16,6 +16,10 @@ zuul:
       path: /flowers/**
       serviceId: gamelogic
       strip-prefix: false
+    achievements:
+      path: /achievements/**
+      serviceId: gamification
+      strip-prefix: false
   ignored-services: '*'
 
 eureka:
