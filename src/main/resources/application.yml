@@ -20,6 +20,10 @@ zuul:
       path: /achievements/**
       serviceId: gamification
       strip-prefix: false
+    userachievements:
+      path: /userachievements/**
+      serviceId: gamification
+      strip-prefix: false
   ignored-services: '*'
 
 eureka:
